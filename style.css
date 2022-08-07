@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #00002b;
+  color: white;
+  padding: 1em;
+}
+main {
+  max-width: 10000px;
+  margin: 0 auto;
+}
+.hamburger {
+  display: none;
+}
+.hamburger span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: navy;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.second-section {
+  background-color: white;
+  color: #004000;
+}
+
+.last-section {
+  background-color: #163689;
+  color: white;
+}
+
+nav {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  text-align: right;
+  /* justify-content: space-between; */
+}
+
+nav a {
+  text-decoration: none;
+  gap: 50px;
+  color: navy;
+  font-size: 15px;
+  margin-left: 10px;
+}
+/* nav{
+    height: 100px;
+    padding-top: -20px;
+  } */
+.btn {
+  background-color: white;
+  padding: 2px;
+  height: 30px;
+  outline: none;
+  color: white;
+  width: 50px;
+}
+/* #search {
+    width: 25em;
+    height: 3em;
+    border: solid blue 2px;
+    border-radius: 10px;
+    margin:4em; 
+    padding:1em; 
+  } */
+.one {
+  background-color: navy;
+  text-align: center;
+  padding: 6em;
+  margin: 4em;
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .one {
+    padding: 16px;
+    text-align: center;
+    margin: 5px;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    font-size:20px;
+  }
+  .second article {
+    padding: 16px;
+    width: 300px;
+    margin: 5px;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    font-size:20px;
+  }
+  .second div {
+    width:300px;
+  }
+  h1 {
+    padding: 16px;
+  }
+  body{
+    width: 95%;
+  }
+  .nav-items {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .images {
+    width: 300px;
+  }
+  .video {
+    width: 400px;
+  }
+  
+}
+.images {
+  display: flex;
+  align-content: center;
+}
+.glad {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.second {
+  display: grid;
+  grid-template-columns: repeat;
+  grid-gap: 1rem;
+}
