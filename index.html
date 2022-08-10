@@ -11,21 +11,22 @@
   <body>
     <header>
       <nav>
+        
+        <div class="logo">
+          <img src="/default.png" alt="logo" width="150" height="120 " />
+        </div>
         <div class="hamburger">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="logo">
-          <img src="/default.png" alt="logo" width="150" height="80 " />
-        </div>
         <div class="nav-items">
           <a href="/">Home</a>
           <a href="/signup.html">Register</a>
           <a href="/datapage.html">Data Page</a>
           <a href="/contact.html">Contact</a>
-          <a href="/jobs">Jobs</a>
+          <a href="/jobs.html">Jobs</a>
           <button class="btn"><a href="/login">Login</a></button>
         </div>
       </nav>
@@ -36,22 +37,25 @@
     <br />
     <br />
     <main>
+      <div class="all-first">
       <section class="one">
         <h2>
           <article>
             <strong
-              >Health is our mission <br />
-              Laboratory personnel recognised as important aspect of healthcare;
-              Our Vision</strong
+              >Health is our <span class="new">Mission</span><br />
+              <br>
+              <br>
+              <em>Laboratory personnel recognised as important aspect of healthcare;
+              <span class="new">Our Vision</span></em></strong
             >
           </article>
         </h2>
       </section>
-      <section class="first-section">
-        <aside>
+      <!-- <section class="first-section"> -->
+        <!-- <aside>
           <picture>
             <source
-              media="(min-width: 600px)"
+              media="(min-width: 400px)"
               srcset="
                 /laboratory.jpg,
                 320w,
@@ -76,8 +80,8 @@
               "
             />
             <div class="glad">
-              <img class="images" src="/laboratory.jpg" width:"600" height="400"
-              alt="laboratory services">
+              <img class="images" src="/laboratory.jpg" width:"400" height="300"
+              alt="laboratory services" id="image">
             </div>
           </picture>
           <figcaption>
@@ -85,14 +89,35 @@
               <em>A photo showing laboratory scientists working on samples</em>
             </p>
           </figcaption>
-        </aside>
-      </section>
+        </aside> -->
+      <!-- </section> -->
+    </div>
       <br />
-      <h1><strong>BLOG</strong></h1>
+      <section  id="buttons">
+        <div class="linked-btn">
+        <button id="bttn" onclick="location.href='/datapage.html'"><img src="https://th.bing.com/th/id/R.adc231bbc51cc08b5f7fc176b1ab4118?rik=SiILdmjcT%2fZAeQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_452000.png&ehk=QG6Yv2fFVhMepJlpqu7f0ef%2f9KtDv0ovR0Xixb%2f0nnw%3d&risl=&pid=ImgRaw&r=0" width="30px" height="40px" alt="a photo of employee"><br>Technicians Database</button>
+      </div>
+      <br>
+      <div class="linked-btn">
+        <button id="bttn" onclick="location.href='/datapage.html'"><img src="https://th.bing.com/th/id/R.adc231bbc51cc08b5f7fc176b1ab4118?rik=SiILdmjcT%2fZAeQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_452000.png&ehk=QG6Yv2fFVhMepJlpqu7f0ef%2f9KtDv0ovR0Xixb%2f0nnw%3d&risl=&pid=ImgRaw&r=0" width="30px" height="40px" alt="a photo of employee"><br>Scientists Database</button>
+      </div>
+      <br>
+      <div class="linked-btn">
+        <button id="bttn" onclick="location.href='/contact.html'"><img src="https://www.evercare.ng/wp-content/uploads/2021/02/call-us.png" alt="contact picture" ><br>Contact Us</button>
+      </div>
+      <br>
+      <div class="linked-btn">
+        <button id="bttn" onclick="location.href='/jobs.html'"><img src="https://th.bing.com/th/id/OIP.loNLdHHt3pEN03TFoD81mwAAAA?pid=ImgDet&w=174&h=170&rs=1" width="30px" height="40px" alt="job logo" ><br>Jobs</button>
+      </div>
+    </section>
+      <br>
+
+      <p><strong>Newsletter, Blog >>></strong></p>
       <br />
       <section class="second-section">
         <div class="second">
           <h1><strong>Who is a Laboratory Scientist?</strong></h1>
+          <p>-----------------------------------</p>
           <article>
             <p>
               A medical laboratory scientist (MLS), also known as a medical
@@ -110,22 +135,21 @@
               are based on the results of the tests medical laboratory
               scientists perform.
             </p>
-            <div>
-            <aside>
-              <iframe
-                controls
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/FNTxRR1eGlY?start=12"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                class="video"
-              ></iframe>
-            </aside>
-          </div>
           </article>
+        </div>
+        <div class="vid">
+          <aside>
+            <iframe
+              controls
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/FNTxRR1eGlY?start=12"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </aside>
         </div>
       </section>
 

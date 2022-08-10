@@ -5,8 +5,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #00002b;
-  color: white;
+  background-color: white;
+  color:navy;
   padding: 1em;
 }
 main {
@@ -25,44 +25,81 @@ main {
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
 }
-
-.second-section {
-  background-color: white;
-  color: #004000;
+nav {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  text-align: right;
+}
+.nav-items {
+  padding: 20px;
+}
+nav a {
+  text-decoration: none;
+  gap: 50px;
+  color: navy;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
+.btn {
+  background-color: blue;
+  border-radius: 30px;
+  padding: 4px;
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+}
+.one {
+  background-color: white;
+  color: #163689;
+  text-align: center;
+  padding: 1em;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+#buttons {
+  display: flex;
+  grid-template-columns: 20% 20%;
+  margin: 1em;
+  grid-gap: 20px;
+  
+  padding: 5px;
+}
+.linked-btn{
+  color: white;
+  width: 300px;
+  border-radius: 29px;;
+}
+#bttn {
+  padding: 10px;
+  color: white;
+  width: 150px;
+  height:150px;
+  font-size: 20px;
+  border-radius: 19px;
+  background-color: navy;
+}
+
+.second-section {
+  display: flex;
+  padding: 4em;
+  grid-template-columns: 10% 0%;
+  grid-gap: 4rem;
+  background-color: rgb(252, 238, 238);
+  color: #004000;
+  font-size: 20px;
+}
+.new {
+  color: red;
+  font-size: 35px;
+}
 .last-section {
   background-color: #163689;
   color: white;
 }
 
-nav {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  text-align: right;
-  /* justify-content: space-between; */
-}
-
-nav a {
-  text-decoration: none;
-  gap: 50px;
-  color: navy;
-  font-size: 15px;
-  margin-left: 10px;
-}
-/* nav{
-    height: 100px;
-    padding-top: -20px;
-  } */
-.btn {
-  background-color: white;
-  padding: 2px;
-  height: 30px;
-  outline: none;
-  color: white;
-  width: 50px;
-}
 /* #search {
     width: 25em;
     height: 3em;
@@ -71,40 +108,110 @@ nav a {
     margin:4em; 
     padding:1em; 
   } */
+
+figcaption p {
+  padding: 2em;
+}
+.images {
+  display: flex;
+  align-content: center;
+  border-radius: 20px;
+  height: 400px;
+}
+.all-first {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background: navy;
+  margin-top: -80px;
+  height: 400px;
+}
+.glad {
+  display: flex;
+  margin: 5em;
+}
+@media screen and (max-width: 1400px) {
 .one {
-  background-color: navy;
-  text-align: center;
-  padding: 6em;
-  margin: 4em;
-  font-size: 25px;
+  width: 300px;
+  font-size: 18px;
+} 
+
+#image {
+  width: 350px;
+}
+.hid {
+  display: none;
+}
+.second article {
+  height: 450px;
+  width: 400px;
 }
 
-
+}
 @media screen and (max-width: 500px) {
   .one {
-    padding: 16px;
+    padding: 3em;
     text-align: center;
-    margin: 5px;
-    /* border: 2px solid red; */
+    margin: 40px;
+    height: 300px;
+    width: 200px;
     border-radius: 15px;
-    font-size:20px;
+    font-size: 13px;
+  }
+  #bttn {
+    width: 60px;
+    font-size: 9px;
+    height: 80px;
+  }
+  .new {
+    font-size: 20px;
+  }
+  #image {
+    display: none;
+  }
+  #buttons{
+    grid-gap: 8px;
+    margin:3px;
+  }
+  figcaption p {
+    display: none;
+  }
+
+  .all-first {
+    height: 400px;
+    margin: 4px;
+  }
+
+  .second-section {
+    padding: 2px;
+    margin: 2px;
+  }
+  .last-section h1 {
+    color: white;
   }
   .second article {
-    padding: 16px;
+    padding: 9px;
     width: 300px;
-    margin: 5px;
-    /* border: 2px solid red; */
+    margin: 2px;
     border-radius: 15px;
-    font-size:20px;
+    font-size: 20px;
+    height: 600px;
   }
-  .second div {
-    width:300px;
-  }
-  h1 {
+  .last-section article {
     padding: 16px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(1, 0, 2);
   }
-  body{
+
+  h1 {
+    color: navy;
+    padding: 2px;
+    /* padding: 16px; */
+  }
+  body {
     width: 95%;
+    color: navy;
   }
   .nav-items {
     display: none;
@@ -117,23 +224,9 @@ nav a {
   }
   .images {
     width: 300px;
+    border-radius: 10px;
   }
-  .video {
-    width: 400px;
+  .vid {
+    display: none;
   }
-  
-}
-.images {
-  display: flex;
-  align-content: center;
-}
-.glad {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
-.second {
-  display: grid;
-  grid-template-columns: repeat;
-  grid-gap: 1rem;
 }
