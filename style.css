@@ -42,8 +42,8 @@ nav a {
 }
 
 .btn {
-  background-color: blue;
-  border-radius: 30px;
+  background-color:white;
+  border-radius: 10px;
   padding: 4px;
   height: 40px;
   width: 100px;
@@ -64,22 +64,23 @@ nav a {
   grid-template-columns: 20% 20%;
   margin: 1em;
   grid-gap: 20px;
-  
-  padding: 5px;
+  padding: 40px;
+   background-color: rgb(250, 233, 236);
 }
 .linked-btn{
   color: white;
   width: 300px;
-  border-radius: 29px;;
+  border-radius: 29px;
 }
 #bttn {
   padding: 10px;
-  color: white;
+  color: navy;
   width: 150px;
   height:150px;
   font-size: 20px;
-  border-radius: 19px;
-  background-color: navy;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid navy;
 }
 
 .second-section {
@@ -93,30 +94,23 @@ nav a {
 }
 .new {
   color: red;
-  font-size: 35px;
+  font-size: 25px;
 }
 .last-section {
   background-color: #163689;
   color: white;
 }
 
-/* #search {
-    width: 25em;
-    height: 3em;
-    border: solid blue 2px;
-    border-radius: 10px;
-    margin:4em; 
-    padding:1em; 
-  } */
-
 figcaption p {
-  padding: 2em;
+  padding: 1em;
 }
 .images {
   display: flex;
-  align-content: center;
-  border-radius: 20px;
+  justify-content: center;
+  border-radius: 5px;
   height: 400px;
+  width: 600px;
+  padding: 50px;
 }
 .all-first {
   display: flex;
@@ -130,6 +124,41 @@ figcaption p {
   display: flex;
   margin: 5em;
 }
+footer {
+  background: white;
+  font-size: 20px;
+  text-align: center;
+  color: navy;
+}
+
+.footer-section {
+  border: 2px solid navy;
+  display: flex;
+  grid-template-columns: 20% 1fr minmax(500px);
+  grid-gap: 40px;
+  font-size: 15px;
+  margin:auto;
+  padding: 50px;
+
+}
+.menu {
+  display: grid;
+  align-items: right;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  text-align: left;
+}
+.cont {
+  display: grid;
+  grid-template-rows: 30%;
+}
+.cont div{
+  display: flex;
+  gap: 10px;
+  text-align: right;
+}
 @media screen and (max-width: 1400px) {
 .one {
   width: 300px;
@@ -137,7 +166,10 @@ figcaption p {
 } 
 
 #image {
-  width: 350px;
+  width: 1000px;
+  height: 500px;
+  margin:5px;
+
 }
 .hid {
   display: none;
@@ -164,14 +196,22 @@ figcaption p {
     height: 80px;
   }
   .new {
-    font-size: 20px;
+    font-size: 15px;
   }
   #image {
     display: none;
   }
   #buttons{
-    grid-gap: 8px;
-    margin:3px;
+    grid-gap: 7px;
+    margin: 3px;
+    padding: 3px;
+  }
+  .footer-section{
+    font-size: 10px;
+  }
+  #svg {
+    height:10px;
+    width: 15px;
   }
   figcaption p {
     display: none;
